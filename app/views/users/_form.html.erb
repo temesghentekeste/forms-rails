@@ -37,21 +37,22 @@
 <% 
 =end %>
 
+<%= render 'shared/errors', obj: @user %>
 <div class="row">
   <div class="col-md-6 mx-auto">
-    <%= form_for @user do |f| %>
+    <%= form_for(@user, :html => { class: "form-horizontal"}) do |f| %>
         <div class='form-group'>
-          <%= f.label :username %>:
+          <%= f.label :username %>
           <%= f.text_field  :username, class: 'form-control', placeholder: 'Enter your username', autofocus: true%>
         </div>
 
         <div class='form-group'>
-          <%= f.label :email %>:
+          <%= f.label :email %>
           <%= f.text_field  :email, class: 'form-control', placeholder: 'Enter your email', autofocus: true%>
         </div>
 
         <div class='form-group'>
-          <%= f.label :password %>:
+          <%= f.label :password %>
           <%= f.text_field  :password, class: 'form-control', placeholder: 'Enter your password', autofocus: true%>
         </div>
 
