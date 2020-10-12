@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      flash[:success] = "Your account has been updated successfully"
+      flash[:success] = 'Your account has been updated successfully'
       redirect_to root_path
     else
       render :edit
