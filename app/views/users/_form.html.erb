@@ -1,0 +1,69 @@
+<% 
+=begin %>  <% ruby_code %>
+    <form accept-charset="UTF-8" action="/users" role="form" method="post">
+      <input type="hidden" name="authenticity_token" value="WUaJBOpLhFo3Mt2vlEmPQ93zMv53sDk6WFzZ2YJJQ0M">
+
+        <label for="username">Username: </label><input type="text" name="user[username]" placeholder="Enter your username"><p>
+
+        <label for="email">Email: </label><input type="email" name="user[email]" placeholder="Enter your email"><p>
+
+        <label for="password">Password: </label><input type="password" name="user[password]" placeholder="Enter your password"><p>
+        <input type="submit" value="Submit This Form">
+      </form>
+<% 
+=end %>
+
+
+<% 
+=begin %>  <% ruby_code %>
+   <%= form_tag(users_path) do %>
+    <div>
+      <%= label :user, :username %>:
+      <%= text_field :user, :username, placeholder: 'Enter your username' %>
+    </div><br>
+
+    <div>
+      <%= label :user, :email %>:
+      <%= text_field :user, :email, placeholder: 'Enter your email' %>
+    </div><br>
+
+    <div>
+      <%= label :user, :password %>:
+      <%= password_field :user, :password, placeholder: 'Enter your password' %>
+    </div><br>
+
+    <%= submit_tag("Create") %>
+  <% end %>
+<% 
+=end %>
+
+<%= render 'shared/errors', obj: @user %>
+<div class="row">
+  <div class="col-md-6 mx-auto">
+    <%= form_for(@user, :html => { class: "form-horizontal"}) do |f| %>
+        <div class='form-group'>
+          <%= f.label :username %>
+          <%= f.text_field  :username, class: 'form-control', placeholder: 'Enter your username', autofocus: true%>
+        </div>
+
+        <div class='form-group'>
+          <%= f.label :email %>
+          <%= f.text_field  :email, class: 'form-control', placeholder: 'Enter your email', autofocus: true%>
+        </div>
+
+        <div class='form-group'>
+          <%= f.label :password %>
+          <%= f.text_field  :password, class: 'form-control', placeholder: 'Enter your password', autofocus: true%>
+        </div>
+
+        <div class="form-group">
+          <%= f.submit class: 'btn btn-primary btn-block'%>
+        </div>
+    <% end %>
+    <div class="text-center">
+      <%= link_to '[ Back to all users ]', root_path, class: 'text-center text-info'%>
+    </div>
+  
+  </div>
+</div>
+ 

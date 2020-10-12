@@ -1,24 +1,85 @@
-# README
+# Forms Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a microverse solo project which is part of the requirements of the microverse main curriculum in the Rails section. The project is about building bare forms and helpers using Ruby on Rails MVC framework. Bootsrap is used to style the page and the pagination is done using kaminari gem. The bcrypt gem is used as a simple wrapper for safely handling passwords.
+      
 
-Things you may want to cover:
+<div align="center">
 
-* Ruby version
+[![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/temesghentekeste/forms-rails/tree/feature/bare-metal-form)
+[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/temesghentekeste/forms-rails/issues)
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/temesghentekeste/forms-rails/pulls)
 
-* System dependencies
+</div>
 
-* Configuration
+## 📝 Content
 
-* Database creation
+<p align="center">
+<a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#live">Live Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#sc">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#gs">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#author">Author</a>
+</p>
 
-* Database initialization
+## 🔧 Built with<a name = "with"></a>
 
-* How to run the test suite
+- Ruby on Rails (Version: 6.0.3.2)
+- Ruby (Version: 2.7.1)
+- Bootsrap 4.5.x
+- Kaminari gem
+- bcrypt gem
+- PostgreSQL
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🔴 Live Demo <a name = "live"></a>
+*Click [here](https://forms-rails-temesghen.herokuapp.com/users/) in order to see a Live Demo of this project.**
 
-* Deployment instructions
 
-* ...
+## Screenshots <a name = "sc"></a>
+
+![screenshot](./app/assets/images/all-users.png)
+![screenshot](./app/assets/images/create-user.png)
+![screenshot](./app/assets/images/edit-user.png)
+
+
+## Getting Started <a name = "gs"></a>
+
+To get a local copy of the repository please run the following commands on your terminal:
+
+```
+$ cd <forms-rails>
+```
+- Open the project in your favorite code editor
+- Set database credentilas for PostgreSQL in config/database.yml file
+~~~bash
+$ git clone git@github.com:temesghentekeste/forms-rails.git
+$ cd forms-rails
+$ bundle install
+$ rails db:migrate  
+~~~
+
+
+
+## ✒️  Author <a name = "author"></a>
+
+👤 **Temesghen Tekeste**
+
+- Github: [@temesghentekeste](https://github.com/temesghentekeste)
+- Twitter: [@temesghentekes1](https://twitter.com/temesghentekes1)
+- Linkedin: [temsghen-tekeste-bahta-8b5243193](https://www.linkedin.com/in/temesghentekeste/)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/temesghentekeste/forms-rails/issues).
+
+
+## 👍 Show your support
+
+Give a ⭐️ if you like this project!
+
+## :clap: Acknowledgements
+
+- The Odin Project: [@theodinproject](https://www.theodinproject.com/)
+- Microverse: [@microverse](https://www.microverse.org/)

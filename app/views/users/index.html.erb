@@ -1,0 +1,21 @@
+<div class="jumbotron my-4">
+  <h1 class="text-center text-dark font-weight-bolder ">All Users</h1>
+</div>
+<div class="row">
+  <div class="col-md-5 mx-auto">
+      <%= link_to 'Create new user', new_user_path, class: 'btn btn-primary btn-block mb-4' %>
+      <% @users.each do |user| %>
+        <%= link_to edit_user_path(user), class: 'text-decoration-none' do %>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class='card-title text-dark mb-1'><%= user.username %></h5>
+              <p class='text-secondary mb-0'><%= user.email %></p>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+      <div class="d-flex justify-content-center">
+        <%= paginate @users%>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="jumbotron">
+  <h1 class='text-center font-weight-bold'>Create a new user</h1>
+</div>
+<% 
+=begin %>  <% ruby_code %>
+    <form accept-charset="UTF-8" action="/users" role="form" method="post">
+      <input type="hidden" name="authenticity_token" value="WUaJBOpLhFo3Mt2vlEmPQ93zMv53sDk6WFzZ2YJJQ0M">
+
+        <label for="username">Username: </label><input type="text" name="user[username]" placeholder="Enter your username"><p>
+
+        <label for="email">Email: </label><input type="email" name="user[email]" placeholder="Enter your email"><p>
+
+        <label for="password">Password: </label><input type="password" name="user[password]" placeholder="Enter your password"><p>
+        <input type="submit" value="Submit This Form">
+      </form>
+<% 
+=end %>
+
+
+<% 
+=begin %>  <% ruby_code %>
+   <%= form_tag(users_path) do %>
+    <div>
+      <%= label :user, :username %>:
+      <%= text_field :user, :username, placeholder: 'Enter your username' %>
+    </div><br>
+
+    <div>
+      <%= label :user, :email %>:
+      <%= text_field :user, :email, placeholder: 'Enter your email' %>
+    </div><br>
+
+    <div>
+      <%= label :user, :password %>:
+      <%= password_field :user, :password, placeholder: 'Enter your password' %>
+    </div><br>
+
+    <%= submit_tag("Create") %>
+  <% end %>
+<% 
+=end %>
+
+<%= render 'form' %>
