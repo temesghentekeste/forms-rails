@@ -15,6 +15,7 @@ This project is a microverse solo project which is part of the requirements of t
 
 <p align="center">
 <a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#live">Live Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#sc">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#gs">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#author">Author</a>
@@ -28,7 +29,8 @@ This project is a microverse solo project which is part of the requirements of t
 - Kaminari gem
 - PostgreSQL
 
-
+## 🔴 Live Demo <a name = "live"></a>
+*Click [here](https://forms-rails-temesghen.herokuapp.com/users/) in order to see a Live Demo of this project.**
 
 
 ## Screenshots <a name = "sc"></a>
