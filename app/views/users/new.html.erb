@@ -38,22 +38,4 @@
 <% 
 =end %>
 
-<%= form_for @user do |f| %>
-    <div>
-      <%= f.label :username %>:
-      <%= f.text_field  :username, placeholder: 'Enter your username', autofocus: true%>
-    </div><br>
-
-     <div>
-      <%= f.label :email %>:
-      <%= f.text_field  :email, placeholder: 'Enter your email', autofocus: true%>
-    </div><br>
-
-     <div>
-      <%= f.label :password %>:
-      <%= f.text_field  :password, placeholder: 'Enter your password', autofocus: true%>
-    </div><br>
-
-    <%= f.submit %>
-<% end %>
- 
+<%= render 'form' %>
