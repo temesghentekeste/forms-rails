@@ -1,6 +1,6 @@
 # Forms Rails
 
-This project is a microverse solo project which is part of the requirements of the microverse main curriculum in the Rails section. The project is about building bare forms and helpers using Ruby on Rails MVC framework. Bootsrap is used to style the page and the pagination is done using kaminari gem.
+This project is a microverse solo project which is part of the requirements of the microverse main curriculum in the Rails section. The project is about building bare forms and helpers using Ruby on Rails MVC framework. Bootsrap is used to style the page and the pagination is done using kaminari gem. The bcrypt gem is used as a simple wrapper for safely handling passwords.
       
 
 <div align="center">
@@ -27,6 +27,7 @@ This project is a microverse solo project which is part of the requirements of t
 - Ruby (Version: 2.7.1)
 - Bootsrap 4.5.x
 - Kaminari gem
+- bcrypt gem
 - PostgreSQL
 
 ## 🔴 Live Demo <a name = "live"></a>
