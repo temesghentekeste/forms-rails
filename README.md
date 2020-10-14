@@ -46,13 +46,12 @@ This project is a microverse solo project which is part of the requirements of t
 To get a local copy of the repository please run the following commands on your terminal:
 
 ```
-$ cd <forms-rails>
+$ git clone git@github.com:temesghentekeste/forms-rails.git
+$ cd forms-rails
 ```
 - Open the project in your favorite code editor
 - Set database credentilas for PostgreSQL in config/database.yml file
 ~~~bash
-$ git clone git@github.com:temesghentekeste/forms-rails.git
-$ cd forms-rails
 $ bundle install
 $ rails db:migrate  
 ~~~
